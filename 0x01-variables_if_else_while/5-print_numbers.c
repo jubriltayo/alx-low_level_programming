@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print numbers 0 - 9
+ * main - print numbers 0 to 9
  *
  * Return: Always (success)
  */
@@ -9,7 +9,7 @@ int main(void)
 {
 	char n;
 
-	for (n = 0; n <= 9; n++)
+	for (n = '0'; n <= '9'; n++)
 	{
 		putchar(n);
 	}
