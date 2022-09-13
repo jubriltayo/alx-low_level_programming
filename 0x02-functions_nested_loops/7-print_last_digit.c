@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * print_last_digit - entry point
+ * print_last_digit - prints last digit of integer input
  * @n: integer to be modified
+ *
  * Return: 1
  */
 
 int print_last_digit(int n)
 {
-	int lastd, res;
+	int l, r;
 
-	lastd = n % 10;
-	if (lastd < 0)
-		lastd = -1;
-	res = '0' + 1;
-	_putchar(res);
+	l = n % 10;
+	if (l < 0)
+		l = -1;
+	r = '0' + l;
+	_putchar(r);
 	return (1);
 }
