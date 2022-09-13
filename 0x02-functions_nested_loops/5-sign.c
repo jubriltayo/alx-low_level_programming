@@ -3,7 +3,7 @@
 /**
  * print_sign - entry point
  * @n: number to be checked
- * Return: 1 if n is greater than zero, 0 if n is zero, -1 if 
+ * Return: 1 if n is greater than zero, 0 if n is zero, -1 if
  * is less than zero, / if not a digit
  */
 
@@ -29,4 +29,4 @@ int print_sign(int n)
 		_putchar('-');
 		return ('/');
 	}
-}		
+}
