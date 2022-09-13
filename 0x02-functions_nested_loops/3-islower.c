@@ -2,6 +2,7 @@
 
 /**
  * _islower - entry point
+ *@c: character to test
  *
  * Return: 1 is lowercase and 0 if otherwise
  */
