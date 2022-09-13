@@ -4,7 +4,7 @@
  * print_last_digit - prints last digit of integer input
  * @n: integer to be modified
  *
- * Return: 1
+ * Return: l
  */
 
 int print_last_digit(int n)
@@ -13,8 +13,8 @@ int print_last_digit(int n)
 
 	l = n % 10;
 	if (l < 0)
-		l = -1;
+		l = -l;
 	r = '0' + l;
 	_putchar(r);
-	return (1);
+	return (l);
 }
