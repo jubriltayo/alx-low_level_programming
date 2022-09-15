@@ -8,7 +8,7 @@
 
 void print_line(int n)
 {
-	int a;
+	int co;
 
 	if (n <= 0)
 	{
@@ -16,7 +16,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for (a = 1; a <= n; n++)
+		for (co = 1; co <= n; co++)
 		{
 			_putchar('_');
 		}
