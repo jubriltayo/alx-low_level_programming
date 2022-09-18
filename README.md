@@ -26,8 +26,8 @@ LEARNING THE C PROGRAMMING LANGUAGE AND ITS APPILICATION
 * This repository comprises of task compilation of my learning in C programming language with ALX program
 
 ## Projects
-[0x00-hello_world](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x00-hello_world)
-[0x01-variables_if_else_while](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
-[0x02-functions_nested_loops](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
-[0x03-debugging](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x03-debugging)
-[0x04-more_functions_nested_loops](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops)
+1. [0x00-hello_world](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x00-hello_world)
+2. [0x01-variables_if_else_while](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
+3. [0x02-functions_nested_loops](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
+4. [0x03-debugging](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x03-debugging)
+5. [0x04-more_functions_nested_loops](https://github.com/jubriltayo/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops)
