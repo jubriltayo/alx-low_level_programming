@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	printf("02-main.c\n");
+	printf("%s\n", __FILE__);
 
 	return (0);
 }
