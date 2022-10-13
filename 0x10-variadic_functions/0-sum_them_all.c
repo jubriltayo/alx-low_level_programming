@@ -9,12 +9,13 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int total = 0, i;
+	va_list my_numbers;
+
+	int total = 0;
+	unsigned int i;
 
 	if (n != 0)
 	{
-		va_list my_numbers;
-
 		va_start(my_numbers, n);
 
 		for (i = 0; i < n; i++)
@@ -24,4 +25,5 @@ int sum_them_all(const unsigned int n, ...)
 
 		return (total);
 	}
+	return (0);
 }
