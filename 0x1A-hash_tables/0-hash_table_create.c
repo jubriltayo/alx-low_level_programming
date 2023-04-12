@@ -12,22 +12,21 @@ hash_table_t *hash_table_create(unsigned long int size)
     hash_table_t *table = NULL;
     unsigned int i;
 
-    /* allocate memory */
     table = malloc(sizeof(hash_table_t));
-    /* malloc check */
+
     if (table == NULL)
     {
         return (NULL);
     }
-    /* Initialize */
+
     table->size = size;
     table->array = malloc(sizeof(hash_node_t *) * size);
-    /* Malloc check */
+
     if (table->array == NULL)
     {
         return (NULL);
     }
-    /* Initialize */
+
     for (i = 0; i < size; i++)
     {
         table->array[i] = NULL;
