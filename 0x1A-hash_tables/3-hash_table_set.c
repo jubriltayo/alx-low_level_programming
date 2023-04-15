@@ -29,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (key_copy == NULL)
 		return (0);
 
-	/* retrieve the index from key_index function*/
+	/* retrieve the index using key_index function*/
 	index = key_index((const unsigned char *)key, ht->size);
 	/* if key already exists, free memory, assign value_copy */
 	if (ht->array[index] && *(ht->array[index]->key) == *key)
