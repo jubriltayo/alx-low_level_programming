@@ -6,7 +6,7 @@
  * @size: size of the array
  * @value: searched value
  *
- * Return: return index for success anf -1 for otherwise
+ * Return: return index for success and -1 for otherwise
 */
 
 int linear_search(int *array, size_t size, int value)
