@@ -13,7 +13,7 @@ void print_array(int *array, size_t low, size_t high)
 	printf("Searching in array: ");
 	for (; low <= high; low++)
 	{
-		if (separator)
+		if (separator != NULL)
 			printf("%s%d", separator, array[low]);
 		else
 			printf("%d", array[low]);
@@ -32,28 +32,13 @@ void print_array(int *array, size_t low, size_t high)
 */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t low = 0, high = size - 1;
+	size_t low  = 0, mid, high = size - 1;
 
 	if (array == NULL)
 		return (-1);
 
+	/* print array at the beginning */
 	print_array(array, low, high);
-	return (binary_helper(array, low, high, value));
-}
-
-/**
- * binary_helper - helper function to search for a value in an array
- * @array: array to be searched
- * @low: start
- * @high: end
- * @value: value to be searched
- *
- * Return: return index for success and -1 for otherwise
-*/
-int binary_helper(int *array, size_t low, size_t high, int value)
-{
-	size_t mid;
-
 	while (low != high)
 	{
 		mid = (low + high) / 2;
