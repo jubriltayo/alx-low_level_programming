@@ -27,20 +27,22 @@ int interpolation_search(int *array, size_t size, int value)
 int interpol_helper(int *array, size_t low, size_t high, int value)
 {
 	size_t pos;
-
-	pos = low + (((double)(high - low) / (array[high] - array[low]))
-			* (value - array[low]));
-	if (pos >= low + high)
+	if (low <= high)
 	{
-		printf("Value checked array[%ld] is out of range\n", pos);
-		return (-1);
-	}
+		pos = low + (((double)(high - low) / (array[high] - array[low]))
+				* (value - array[low]));
+		if (pos >= low + high)
+		{
+			printf("Value checked array[%ld] is out of range\n", pos);
+			return (-1);
+		}
 
-	printf("Value checked array[%ld] = [%d]\n", pos, array[pos]);
-	if (array[pos] == value)
-		return (pos);
-	else if (array[pos] < value)
-		return (interpol_helper(array, low + 1, high, value));
-	else
-		return (interpol_helper(array, low, high - 1, value));
+		printf("Value checked array[%ld] = [%d]\n", pos, array[pos]);
+		if (array[pos] == value)
+			return (pos);
+		else if (array[pos] < value)
+			return (interpol_helper(array, low + 1, high, value));
+		else
+			return (interpol_helper(array, low, high - 1, value));
+	}
 }
