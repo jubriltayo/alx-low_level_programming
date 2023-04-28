@@ -29,7 +29,7 @@ int jump_search(int *array, size_t size, int value)
 		return (-1);
 
 	/* find block that may contain value */
-	while (array[min(step, size) - 1] < value)
+	while (array[step] < value)
 	{
 		printf("Value checked array[%ld] = [%d]\n", step, array[step]);
 		prev = step;
